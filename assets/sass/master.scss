@@ -1,0 +1,140 @@
+@import '_variables.scss';
+@import '_loader.scss';
+@import '_header.scss';
+
+#main-banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/banner1.png');
+    &::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.25);
+    }
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.bar_underline {
+    height: 4px;
+    width: 85px;
+    background: #91c5ff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.features {
+    .feature {
+        border: none !important; 
+        .feature-image-content {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: $backgournd-blue-light;
+        }
+    }
+}
+
+#services {
+    width: 100%;
+    background-image: url('../img/services.jpg');
+    background-position: center;
+    background-size: cover;
+    .card {
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        padding: 1rem 0;
+        -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+    }
+    .service-image-content {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: $purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: 40px;
+        background-repeat: no-repeat;
+    }
+
+    .row .col-md-6 {
+        &:nth-child(2) {
+            .service-image-content {
+                background-color: $aqua;
+                background-image: url('../img//svg/web-design.svg');
+            }
+        }
+        &:nth-child(3) {
+            .service-image-content {
+                background-color: $orange;
+                background-image: url('../img//svg/big-data.svg');
+            }
+        }
+        &:nth-child(4) {
+            .service-image-content {
+                background-color: $blue;
+                background-image: url('../img//svg/app-mobile.svg');
+            }
+        }
+        &:nth-child(5) {
+            .service-image-content {
+                background-color: $red-light;
+                background-image: url('../img//svg/solutions.svg');
+            }
+        }
+        &:nth-child(6) {
+            .service-image-content {
+                background-color: $dark-purple;
+                background-image: url('../img//svg/supermarket.svg');
+            }
+        }
+    }
+}
+
+#contact {
+    position: relative;
+    background-color: #f9f9f9;
+    .card {
+        -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+        padding: 2rem 2.5rem;
+    }
+    .form-group {
+        position: relative;
+    }
+    input {
+        background-color: #f9f9f9 !important;
+        border-color: #f9f9f9 !important;
+        height: 50px;
+        border-radius: 10px;
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(145, 197, 255, 0.5);
+        }
+    }
+    textarea {
+        background-color: #f9f9f9;
+    }
+}
+
+#footer {
+    background-color: #45526e;
+    * {
+        color: #Fff; 
+    }
+}

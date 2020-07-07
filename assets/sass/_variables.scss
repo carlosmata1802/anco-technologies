@@ -1,0 +1,43 @@
+/*Colors*/
+$color-primary: #91c5ff;
+$backgournd-blue-light: #d1f9fc ; 
+$icon-blue: #10dce8;  
+$purple: #deb0fe;
+$aqua: #79e8e2; 
+$orange: #fcc774;
+$blue: #84b7fd; 
+$red-light: #fe929f;  
+$dark-purple: #2e1342; 
+
+/*Fonts*/
+$font-primary: 'Archivo', sans-serif;
+$font-secondary: 'Work Sans', sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-primary;
+    font-weight: 900;
+}
+p {
+    font-family: $font-secondary !important;
+}
+button {
+    font-family: $font-primary !important;
+}
+h1 {
+    font-size: 4rem;
+    @media(max-width: 767px) {
+        font-size: 3rem;
+    }
+}
+h2 {
+    font-size: 3rem;
+    @media(max-width: 767px) {
+        font-size: 2.25rem;
+    }
+}
+h3 {
+    font-size: 2.25rem;
+    @media(max-width: 767px) {
+        font-size: 2rem;
+    }
+}
