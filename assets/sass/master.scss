@@ -22,6 +22,9 @@
         position: relative;
         z-index: 10;
     }
+    @media (max-width: 767px) {
+        margin-top: 70px;
+    }
 }
 
 .bar_underline {
@@ -33,7 +36,9 @@
     overflow: hidden;
     margin-bottom: 16px;
 }
-
+#features {
+    background-color: #f9f9f9;
+}
 .features {
     .feature {
         border: none !important; 
@@ -43,6 +48,9 @@
             border-radius: 50%;
             margin: 0 auto;
             background-color: $backgournd-blue-light;
+        }
+        @media(max-width: 1024px) {
+            margin-bottom: 2.5rem;
         }
     }
 }
@@ -109,7 +117,6 @@
 
 #contact {
     position: relative;
-    background-color: #f9f9f9;
     .card {
         -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
         box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
