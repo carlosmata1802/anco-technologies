@@ -25,8 +25,7 @@ async function onSubmit(e) {
         },
         body: JSON.stringify(data)
     }
-    //let url = 'https://2svplln58k.execute-api.us-east-1.amazonaws.com/dev/sendEmail';
-    let url = 'http://localhost:3000/dev/sendEmail'
+    let url = 'https://2svplln58k.execute-api.us-east-1.amazonaws.com/dev/sendEmail';
     console.log(data)
 
     const response = await fetch(url, options).then(x => x.json());
