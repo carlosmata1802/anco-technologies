@@ -101,11 +101,11 @@ h3 {
   }
 }
 header {
+  padding: 0.5rem 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  height: 70px;
   width: 100%;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
@@ -113,6 +113,14 @@ header {
   background-color: #ffffff !important;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+header img {
+  width: 90%;
+}
+@media (max-width: 767px) {
+  header img {
+    width: 50%;
+  }
 }
 
 #main-banner {
@@ -140,6 +148,10 @@ header {
   #main-banner {
     margin-top: 70px;
   }
+}
+
+h1 + button {
+  min-width: 200px;
 }
 
 .bar_underline {

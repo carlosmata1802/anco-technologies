@@ -11,7 +11,7 @@
     background-image: url('../img/banner1.png');
     &::before {
         content: ''; 
-        position: absolute;
+        position: absolute; 
         top: 0;
         left: 0;
         width: 100%;
@@ -25,6 +25,10 @@
     @media (max-width: 767px) {
         margin-top: 70px;
     }
+}
+
+h1 + button {
+    min-width: 200px;
 }
 
 .bar_underline {
