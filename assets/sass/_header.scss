@@ -11,12 +11,28 @@ header {
     background-color: #ffffff !important;
     -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-    img {
-        width: 90%;
+    .container {
+        background-color: #ffffff;
+    }
+    #menu {
+        width: 25px;
+        height: 25px;
     }
     @media (max-width: 767px) {
-        img {
-            width: 50%;
+        z-index: 100;
+        .nav-mobile > div {
+            position: absolute;
+            top: -220px;
+            z-index: -1;
+            left: 0;
+            background-color: #ffffff;
+            transition: all .35s ease;
+            overflow: hidden;
+            padding: 1rem 2rem;
+            p {
+                margin: 1rem 0 !important;
+            }
         }
     }
+    
 }
